@@ -16,8 +16,8 @@ function Main() {
   return (
     <div>
       <Header />
-      <div className="w-[80vw] h-[100vh]">
-        <div className="w-[80vw] h-[600px]">
+      <div className="md:w-[80vw] w-full h-fit md:h-[100vh]">
+        <div className="md:w-[80vw] w-full h-fit md:h-[100vh]">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -37,55 +37,55 @@ function Main() {
                 <img
                   src="/images/image11.jpg"
                   alt="Thanks"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/istockphoto.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image7.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/chacha.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image4.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image5.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image6.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image3.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/image10.jpg"
-                  className="block w-[100%] h-[100%] object-stretch object-center"
+                  className="block w-[100%] h-[100%] md:object-stretch md:object-center"
                 />
               </SwiperSlide>
             </div>
