@@ -6,3 +6,18 @@
 html {
   font-family: "Adobe Clean Serif";
 }
+.swiper-button-prev {
+  color: rgb(233, 233, 233);
+}
+.swiper-button-next {
+  color: rgba(233, 233, 233);
+}
+.swiper-pagination-bullet-active {
+  color: #3e7fff;
+}
+.footer-box {
+  box-shadow: 0px -2px 1px #3e7fff;
+}
+.card-shadow {
+  box-shadow: 0px 4px 0px 3px rgba(75, 75, 75, 0.78);
+}
