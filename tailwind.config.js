@@ -9,6 +9,11 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
+    //Add custom color variables
+    colors: {
+      box: 'rgba(233, 233, 233, 0.33)',
+      main: '#3E7FFF'
+    },
     screens: {
       sm: "350px",
       // => @media (min-width: 640px) { ... }
