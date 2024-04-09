@@ -53,43 +53,11 @@ function Navbar() {
 
   return (
     <div
-      className={` flex justify-between font-serif items-center lg:w-[100vw] md:w-auto sm:bg-blue-600 md:bg-blue-600 lg:bg-white ${
-        open ? "" : ""
-      }`}
+      className={` flex items-center lg:w-[100vw] md:w-auto bg-box  ${open ? "" : ""
+        }`}
     >
-      {/* //mobile responsive */}
-      <div className="block md:hidden z-10 ">
-        <div
-          className=" font-extrabold text-3xl m-2 cursor-pointer text-white "
-          onClick={() => setOpen(!open)}
-        >
-          {open ? (
-            <div>
-              <span className="z-10">
-                <i class="bi bi-x-lg"></i>
-              </span>
-              <div className=" flex flex-col items-center justify-center text-[15px] absolute lg:static bg-blue-600 left-0 right-0 md:mt-[130px] md:w-auto text-center">
-                <Link to="/Mainpage">
-                  <span>Home</span>
-                </Link>
-                <button onClick={handalClick}>
-                  <span>Live</span>
-                </button>
-                <span>About</span>
-                <p onClick={openPostModal}>+ Post</p>
-              </div>
-            </div>
-          ) : (
-            <span>
-              <i class="bi bi-list"></i>
-            </span>
-          )}
-        </div>
-      </div>
-      <div className="flex justify-around items-center  w-[40vw] h-[60px] ml-8">
-        <div className="text-red-600 text-[25px] font-serif font-extrabold md:flex z-10">
-          <h1>Miilan</h1>
-        </div>
+      <div className="flex md:justify-around pl-5 mt-2.5 md:pl-0 md:mt-0 items-center w-full h-[60px]">
+        <h1 className="text-dark text-3xl font-medium">Miilan</h1>
         <div className="hidden md:block">
           <ul className="flex justify-around items-center w-[20vw] h-[60px] m-2 ">
             <Link to="/Mainpage">
@@ -213,6 +181,35 @@ function Navbar() {
             </Menu.Items>
           </Transition>
         </Menu>
+      </div>
+      {/* //mobile responsive */}
+      <div className="block md:hidden z-10 ">
+        <div
+          className=" text-3xl md:m-2 mt-2 mx-5  cursor-pointer text-dark "
+          onClick={() => setOpen(!open)}
+        >
+          {open ? (
+            <div>
+              <span className="z-10">
+                <i class="bi bi-x-lg"></i>
+              </span>
+              <div className=" flex flex-col items-center text-dark justify-center py-7 gap-y-4 z-50 absolute lg:static bg-neutral-50 left-0 right-0 md:mt-[130px] md:w-auto text-center">
+                <Link to="/Mainpage">
+                  <span>Home</span>
+                </Link>
+                <button onClick={handalClick}>
+                  <span>Live</span>
+                </button>
+                <span>About</span>
+                <p onClick={openPostModal}>Post</p>
+              </div>
+            </div>
+          ) : (
+            <span>
+              <i class="bi bi-list"></i>
+            </span>
+          )}
+        </div>
       </div>
       {showModal && <ModalRegister closeModal={closeModal} />}
       {showLoginModal && <ModalLogin closeModal={closeModal} />}

@@ -30,7 +30,8 @@ module.exports = {
       //Add custom color variables
       colors: {
         box: 'rgba(233, 233, 233, 0.33)',
-        main: '#3E7FFF'
+        main: '#3E7FFF',
+        dark: "#272727",
       },
       animation: {
         scroll:
