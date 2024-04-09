@@ -1,28 +1,19 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+import hero from '../../assets/images/hero.svg'
 function Header() {
   return (
     <>
-      <div className="w-[100vw] h-[600px] relative  ">
-        {/* <img
-          src=""
-          className="w-screen h-screen bg-no-repeat bg-cover -z-30  "
-        /> */}
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> */}
-        <div className="absolute top-[150px] left-10 text-blue-600 font-serif lg:text-[4rem] sm:text-[2.5rem] sm:m-1 sm:p-1 md:text-left md:text-[4rem] font-extrabold lg:text-left sm:text-center  ">
-          <p>APNO KO APNO </p>
-          <p>SE MILAYE</p>
-          <span className="text-red-600 font-serif font-extrabold lg:text-left sm:text-center">
-            <Typewriter
-              words={["MIILAN"]}
-              loop={1000}
-              cursor
-              cursorStyle="|"
-              typeSpeed={40}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-          </span>
+      <div className="w-[100vw]  md:h-[600px] h-[80vh] relative">
+        <div className="flex h-full flex-col text-center justify-start py-20 gap-y-16 items-center">
+          <h2 className="text-dark font-medium text-5xl">
+            Apno ko Apno <br />
+            se <div className="relative inline-block">milaye
+              <div className="h-[75%] w-[75%] rounded-full -z-10 bg-[#BAEEB9] -rotate-[6deg] bottom-1.5 right-0  absolute"></div>
+            </div>
+          </h2>
+          <div className="pl-10 h-[40%]">
+            <img src={hero} alt="" />
+          </div>
         </div>
       </div>
     </>
