@@ -49,21 +49,21 @@ function ModalRegister({ closeModal }) {
     <Modal
       isOpen={true}
       onRequestClose={closeModal}
-      className="lg:w-[40vw] lg:h-[75vh] sm:w-[80vw] sm:h-[50vh] border bg-white rounded p-4"
+      className="lg:w-[40vw] lg:h-[75vh] sm:w-[80vw] sm:h-80vh] border bg-white rounded p-4"
       overlayClassName="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur z-40 "
     >
       <div>
         <div onClick={closeModal}>
           <i class="bi bi-x-lg"></i>
         </div>
-        <div className="text-center font-bold text-xl">
+        <div className="text-center font-medium text-2xl">
           <h1>Register</h1>
         </div>
-        <form method="post" action="/" onSubmit={handleSubmit}>
+        <form className="mt-5" method="post" action="/" onSubmit={handleSubmit}>
           <div>
             <div>
-              <label>User Name</label>
-              <div className="mt-2">
+              <label className="text-sm">User Name</label>
+              <div className="mt-1 mb-4">
                 <input
                   type="text"
                   name="username"
@@ -72,13 +72,13 @@ function ModalRegister({ closeModal }) {
                   onChange={handleChange}
                   autoComplete="given-name"
                   required
-                  className="border h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="border pl-3 h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
             </div>
             <div className="sm:col-span-3">
-              <label htmlFor="email">Email</label>
-              <div className="mt-2">
+              <label className="text-sm" htmlFor="email">Email</label>
+              <div className="mt-1 mb-4">
                 <input
                   id="email"
                   name="email"
@@ -86,14 +86,14 @@ function ModalRegister({ closeModal }) {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="border h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="border pl-3 h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
             </div>
 
             <div className="sm:col-span-3">
-              <label>Number</label>
-              <div className="mt-2">
+              <label className="text-sm">Number</label>
+              <div className="mt-1 mb-4">
                 <input
                   id="number"
                   name="number"
@@ -101,14 +101,14 @@ function ModalRegister({ closeModal }) {
                   required
                   value={formData.number}
                   onChange={handleChange}
-                  className="border h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="border pl-3 h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
             </div>
 
             <div className="sm:col-span-3">
-              <label htmlFor="email">Password</label>
-              <div className="mt-2">
+              <label className="text-sm" htmlFor="email">Password</label>
+              <div className="mt-1 mb-4">
                 <input
                   id="password"
                   name="password"
@@ -116,7 +116,7 @@ function ModalRegister({ closeModal }) {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="border h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="border pl-3 h-10 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
             </div>
