@@ -11,7 +11,7 @@ function Header() {
               <div className="h-[75%] w-[75%] rounded-full -z-10 bg-[#BAEEB9] -rotate-[6deg] bottom-1.5 right-0  absolute"></div>
             </div>
           </h2>
-          <div className="pl-10 h-[40%]">
+          <div className="pl-10 h-fit">
             <img src={hero} alt="" />
           </div>
         </div>

@@ -18,6 +18,9 @@ function Main() {
       <Header />
       <div className="md:w-[80vw] w-full h-fit md:h-[100vh]">
         <div className="md:w-[80vw] w-full h-fit md:h-[100vh]">
+          <div className="text-center">
+            <p className="text-dark font-medium text-4xl pb-3">Uniting People</p>
+          </div>
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -91,15 +94,15 @@ function Main() {
             </div>
           </Swiper>
         </div>
-        <div className="grid place-items-center w-[100vw] h-[700px] bg-white ">
+        <div className="grid place-items-center w-screen h-[700px] bg-white ">
           <InfiniteMovingCardsDemo />
-          <div className="flex justify-between m-10 w-[80vw]">
+          <div className=" flex text-dark items-center pl-7 pr-5 space-x-10 w-full">
             <div className="text-center">
               <ScrollTriggerComponent
                 onEnter={() => setCounter(true)}
                 onExit={() => setCounter(false)}
               >
-                <span className="text-2xl md:text-4xl lg:text-5xl">
+                <span className=" text-5xl font-bold md:text-4xl lg:text-5xl">
                   {counter && (
                     <CountUp start={0} end={10} duration={2} delay={0} />
                   )}
@@ -115,7 +118,7 @@ function Main() {
                 onEnter={() => setCounter(true)}
                 onExit={() => setCounter(false)}
               >
-                <span className="text-2xl md:text-4xl lg:text-5xl">
+                <span className="text-5xl font-bold md:text-4xl lg:text-5xl">
                   {counter && (
                     <CountUp start={0} end={50} duration={2} delay={0} />
                   )}
@@ -131,7 +134,7 @@ function Main() {
                 onEnter={() => setCounter(true)}
                 onExit={() => setCounter(false)}
               >
-                <span className="text-2xl md:text-4xl lg:text-5xl">
+                <span className="text-5xl font-bold md:text-4xl lg:text-5xl">
                   {counter && (
                     <CountUp start={0} end={20} duration={2} delay={0} />
                   )}
